@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es una API? - Guía Completa</title>
+    
+    <!-- Bootstrap CSS (local) -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="card-custom content-page">
+            <div class="header-section">
+                <h1><i class="fas fa-code"></i> ¿Qué es una API?</h1>
+                <p>Interface de Programación de Aplicaciones</p>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <i class="fas fa-map-marked-alt"></i> Geolocalización
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">
+                                    <i class="fas fa-home"></i> Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que-es-geolocalizacion.html">
+                                    <i class="fas fa-question-circle"></i> ¿Qué es?
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tipos-geolocalizacion.html">
+                                    <i class="fas fa-list"></i> Tipos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aplicaciones-geolocalizacion.html">
+                                    <i class="fas fa-mobile-alt"></i> Aplicaciones
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="que-es-api.html">
+                                    <i class="fas fa-code"></i> API
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="generar-clave-api.html">
+                                    <i class="fas fa-key"></i> Generar API Key
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tipos-ubicacion.html">
+                                    <i class="fas fa-map-pin"></i> Tipos de Ubicación
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="content-section">
+                <div class="content-body">
+                    <div class="icon-feature">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    
+                    <h3>Definición</h3>
+                    <p class="lead">
+                        Una <strong>API</strong> (Application Programming Interface) es un conjunto de reglas, protocolos y herramientas que permiten que diferentes aplicaciones de software se comuniquen entre sí.
+                    </p>
+
+                    <div class="info-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <h5>Analogía simple</h5>
+                            <p>Imagina un restaurante: tú (aplicación) quieres comida (datos), pero no puedes ir a la cocina directamente. El mesero (API) lleva tu pedido a la cocina y te trae la comida. La API es ese intermediario que facilita la comunicación.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-4">¿Cómo funciona una API?</h3>
+                    <div class="api-diagram">
+                        <div class="api-step">
+                            <div class="step-number">1</div>
+                            <i class="fas fa-laptop"></i>
+                            <h5>Aplicación Cliente</h5>
+                            <p>Solicita información o servicio</p>
+                        </div>
+                        <div class="arrow-right">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="api-step">
+                            <div class="step-number">2</div>
+                            <i class="fas fa-exchange-alt"></i>
+                            <h5>API</h5>
+                            <p>Procesa la solicitud</p>
+                        </div>
+                        <div class="arrow-right">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="api-step">
+                            <div class="step-number">3</div>
+                            <i class="fas fa-server"></i>
+                            <h5>Servidor</h5>
+                            <p>Devuelve la respuesta</p>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">Tipos de APIs</h3>
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h5>REST API</h5>
+                                <p>La más común. Usa HTTP y es fácil de usar. Ejemplo: APIs de Google Maps, Twitter, Facebook.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h5>GraphQL</h5>
+                                <p>Permite solicitar exactamente los datos que necesitas. Más flexible que REST.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-code"></i>
+                                </div>
+                                <h5>SOAP</h5>
+                                <p>Protocolo más antiguo y formal. Usado en sistemas empresariales y bancarios.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <h5>WebSocket</h5>
+                                <p>Para comunicación en tiempo real bidireccional. Chats, juegos online.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">Ejemplo práctico: API de Google Maps</h3>
+                    <div class="code-example">
+                        <div class="code-header">
+                            <i class="fas fa-code"></i> Ejemplo de uso en JavaScript
+                        </div>
+                        <pre><code>// Solicitud a la API de Geolocalización
+fetch('https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Ubicación:', data.results[0].geometry.location);
+    // Resultado: { lat: 37.4224764, lng: -122.0842499 }
+  });</code></pre>
+                    </div>
+
+                    <h3 class="mt-4">Ventajas de usar APIs</h3>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Reutilización:</strong> No necesitas crear todo desde cero</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Especialización:</strong> Usa servicios de expertos (mapas, pagos, etc.)</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Escalabilidad:</strong> Manejan millones de solicitudes</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Mantenimiento:</strong> El proveedor se encarga de actualizaciones</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Integración:</strong> Conecta diferentes sistemas fácilmente</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Ahorro de tiempo:</strong> Desarrollo más rápido</li>
+                    </ul>
+
+                    <h3 class="mt-4">APIs populares para geolocalización</h3>
+                    <div class="api-list">
+                        <div class="api-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div>
+                                <h5>Google Maps API</h5>
+                                <p>Mapas, rutas, lugares, geocodificación</p>
+                                <span class="badge bg-primary">Freemium</span>
+                            </div>
+                        </div>
+                        <div class="api-item">
+                            <i class="fas fa-map"></i>
+                            <div>
+                                <h5>Mapbox API</h5>
+                                <p>Mapas personalizables, navegación</p>
+                                <span class="badge bg-primary">Freemium</span>
+                            </div>
+                        </div>
+                        <div class="api-item">
+                            <i class="fas fa-location-arrow"></i>
+                            <div>
+                                <h5>OpenStreetMap API</h5>
+                                <p>Mapas de código abierto</p>
+                                <span class="badge bg-success">Gratis</span>
+                            </div>
+                        </div>
+                        <div class="api-item">
+                            <i class="fas fa-globe-americas"></i>
+                            <div>
+                                <h5>HERE API</h5>
+                                <p>Mapas, tráfico, navegación empresarial</p>
+                                <span class="badge bg-primary">Freemium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box mt-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                        <i class="fas fa-key" style="color: white;"></i>
+                        <div>
+                            <h5 style="color: white;">Autenticación con API Key</h5>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">La mayoría de las APIs requieren una clave de autenticación (API Key) para identificar quién hace las solicitudes y controlar el uso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (local) -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
