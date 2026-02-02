@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Generar una Clave API - Guía Completa</title>
+    
+    <!-- Bootstrap CSS (local) -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="card-custom content-page">
+            <div class="header-section">
+                <h1><i class="fas fa-key"></i> Cómo Generar una Clave API</h1>
+                <p>Guía paso a paso para Google Maps</p>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <i class="fas fa-map-marked-alt"></i> Geolocalización
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">
+                                    <i class="fas fa-home"></i> Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que-es-geolocalizacion.html">
+                                    <i class="fas fa-question-circle"></i> ¿Qué es?
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tipos-geolocalizacion.html">
+                                    <i class="fas fa-list"></i> Tipos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aplicaciones-geolocalizacion.html">
+                                    <i class="fas fa-mobile-alt"></i> Aplicaciones
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que-es-api.html">
+                                    <i class="fas fa-code"></i> API
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="generar-clave-api.html">
+                                    <i class="fas fa-key"></i> Generar API Key
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tipos-ubicacion.html">
+                                    <i class="fas fa-map-pin"></i> Tipos de Ubicación
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="content-section">
+                <div class="content-body">
+                    <div class="icon-feature">
+                        <i class="fas fa-lock-open"></i>
+                    </div>
+                    
+                    <p class="lead">
+                        Generar una API Key es el primer paso para usar servicios como Google Maps en tus aplicaciones. Sigue esta guía detallada.
+                    </p>
+
+                    <h3>Pasos para generar una API Key de Google Maps</h3>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 1</div>
+                        <div class="step-content">
+                            <h4><i class="fas fa-user-plus"></i> Crear una cuenta en Google Cloud</h4>
+                            <p>Necesitas una cuenta de Google activa para acceder a Google Cloud Platform.</p>
+                            <ol>
+                                <li>Ve a <a href="https://console.cloud.google.com/" target="_blank">console.cloud.google.com</a></li>
+                                <li>Inicia sesión con tu cuenta de Google</li>
+                                <li>Acepta los términos y condiciones</li>
+                                <li>Completa el registro (puede solicitar información de facturación)</li>
+                            </ol>
+                            <div class="alert alert-info mt-2">
+                                <i class="fas fa-info-circle"></i> Google ofrece $300 USD de crédito gratuito para nuevos usuarios
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 2</div>
+                        <div class="step-content">
+                            <h4><i class="fas fa-folder-plus"></i> Crear un nuevo proyecto</h4>
+                            <p>Organiza tus APIs en proyectos separados.</p>
+                            <ol>
+                                <li>En la consola, haz clic en el selector de proyectos (parte superior)</li>
+                                <li>Selecciona "Proyecto nuevo"</li>
+                                <li>Asigna un nombre descriptivo (ej: "Mi App de Geolocalización")</li>
+                                <li>Haz clic en "Crear"</li>
+                            </ol>
+                            <div class="tip-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <strong>Consejo:</strong> Usa nombres claros para identificar fácilmente cada proyecto
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 3</div>
+                        <div class="step-content">
+                            <h4><i class="fas fa-toggle-on"></i> Habilitar la API de Maps JavaScript</h4>
+                            <p>Activa los servicios que necesitas usar.</p>
+                            <ol>
+                                <li>En el menú lateral, ve a "APIs y servicios" → "Biblioteca"</li>
+                                <li>Busca "Maps JavaScript API"</li>
+                                <li>Haz clic en la API encontrada</li>
+                                <li>Presiona el botón "HABILITAR"</li>
+                            </ol>
+                            <div class="info-box mt-2">
+                                <i class="fas fa-list"></i>
+                                <div>
+                                    <h5>Otras APIs útiles para geolocalización:</h5>
+                                    <ul>
+                                        <li>Geocoding API (convertir direcciones en coordenadas)</li>
+                                        <li>Places API (información de lugares)</li>
+                                        <li>Directions API (rutas y navegación)</li>
+                                        <li>Geolocation API (ubicación por Wi-Fi/celular)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 4</div>
+                        <div class="step-content">
+                            <h4><i class="fas fa-key"></i> Crear credenciales (API Key)</h4>
+                            <p>Genera tu clave de autenticación.</p>
+                            <ol>
+                                <li>Ve a "APIs y servicios" → "Credenciales"</li>
+                                <li>Haz clic en "+ CREAR CREDENCIALES"</li>
+                                <li>Selecciona "Clave de API"</li>
+                                <li>Se generará automáticamente tu API Key</li>
+                                <li>Copia y guarda la clave en un lugar seguro</li>
+                            </ol>
+                            <div class="code-example mt-3">
+                                <div class="code-header">
+                                    <i class="fas fa-code"></i> Ejemplo de API Key
+                                </div>
+                                <pre><code>AIzaSyB8SOcrXgZBO_gVS_6hyMEMn-V421JLWS0</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 5</div>
+                        <div class="step-content">
+                            <h4><i class="fas fa-shield-alt"></i> Restringir la API Key (Seguridad)</h4>
+                            <p>Protege tu clave de uso no autorizado.</p>
+                            <ol>
+                                <li>Haz clic en tu API Key recién creada</li>
+                                <li>En "Restricciones de aplicación", selecciona una opción:</li>
+                            </ol>
+                            
+                            <div class="row g-3 mt-2">
+                                <div class="col-md-6">
+                                    <div class="restriction-card">
+                                        <h5><i class="fas fa-globe"></i> Referentes HTTP</h5>
+                                        <p>Para sitios web</p>
+                                        <code>https://midominio.com/*</code>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="restriction-card">
+                                        <h5><i class="fas fa-network-wired"></i> Direcciones IP</h5>
+                                        <p>Para servidores</p>
+                                        <code>192.168.1.1</code>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="restriction-card">
+                                        <h5><i class="fas fa-mobile-alt"></i> Apps Android</h5>
+                                        <p>Nombre de paquete + SHA-1</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="restriction-card">
+                                        <h5><i class="fab fa-apple"></i> Apps iOS</h5>
+                                        <p>Bundle ID</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ol start="3" class="mt-3">
+                                <li>En "Restricciones de API", selecciona las APIs habilitadas</li>
+                                <li>Haz clic en "GUARDAR"</li>
+                            </ol>
+
+                            <div class="alert alert-warning mt-3">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <strong>¡Importante!</strong> Sin restricciones, cualquiera podría usar tu API Key y generar cargos en tu cuenta.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-badge">Paso 6</div>
+                        <div class="step-content">
+                            <h4><i class="fas fa-code"></i> Usar la API Key en tu código</h4>
+                            <p>Integra la clave en tu aplicación.</p>
+                            
+                            <div class="code-example">
+                                <div class="code-header">
+                                    <i class="fas fa-code"></i> Ejemplo HTML
+                                </div>
+                                <pre><code>&lt;!-- Cargar API de Google Maps --&gt;
+&lt;script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer&gt;&lt;/script&gt;</code></pre>
+                            </div>
+
+                            <div class="code-example mt-3">
+                                <div class="code-header">
+                                    <i class="fas fa-code"></i> Ejemplo JavaScript
+                                </div>
+                                <pre><code>// Geocodificación
+const apiKey = 'TU_API_KEY';
+const address = '1600 Amphitheatre Parkway, Mountain View, CA';
+
+fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${apiKey}`)
+  .then(response => response.json())
+  .then(data => console.log(data));</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">Mejores prácticas de seguridad</h3>
+                    <ul class="styled-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Nunca</strong> compartas tu API Key públicamente</li>
+                        <li><i class="fas fa-check-circle"></i> No la subas a repositorios públicos (GitHub, GitLab)</li>
+                        <li><i class="fas fa-check-circle"></i> Usa variables de entorno en tu código</li>
+                        <li><i class="fas fa-check-circle"></i> Restringe siempre por dominio o IP</li>
+                        <li><i class="fas fa-check-circle"></i> Monitorea el uso desde la consola de Google Cloud</li>
+                        <li><i class="fas fa-check-circle"></i> Rota las claves periódicamente</li>
+                        <li><i class="fas fa-check-circle"></i> Establece alertas de facturación</li>
+                    </ul>
+
+                    <div class="pricing-box mt-4">
+                        <h4><i class="fas fa-dollar-sign"></i> Costos y límites</h4>
+                        <p>Google Maps API ofrece un crédito mensual gratuito de <strong>$200 USD</strong></p>
+                        <div class="row g-3 mt-2">
+                            <div class="col-md-4">
+                                <div class="price-item">
+                                    <h5>Maps JavaScript API</h5>
+                                    <p class="price">$7 <span>por 1000 cargas</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="price-item">
+                                    <h5>Geocoding API</h5>
+                                    <p class="price">$5 <span>por 1000 solicitudes</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="price-item">
+                                    <h5>Places API</h5>
+                                    <p class="price">$17 <span>por 1000 solicitudes</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-3"><small>* Los precios pueden variar. Consulta la documentación oficial.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (local) -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

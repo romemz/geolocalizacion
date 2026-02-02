@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Geolocalización - Guía Completa</title>
+    
+    <!-- Bootstrap CSS (local) -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="card-custom content-page">
+            <div class="header-section">
+                <h1><i class="fas fa-list"></i> Tipos de Geolocalización</h1>
+                <p>Métodos y tecnologías más utilizados</p>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <i class="fas fa-map-marked-alt"></i> Geolocalización
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">
+                                    <i class="fas fa-home"></i> Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que-es-geolocalizacion.html">
+                                    <i class="fas fa-question-circle"></i> ¿Qué es?
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="tipos-geolocalizacion.html">
+                                    <i class="fas fa-list"></i> Tipos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aplicaciones-geolocalizacion.html">
+                                    <i class="fas fa-mobile-alt"></i> Aplicaciones
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que-es-api.html">
+                                    <i class="fas fa-code"></i> API
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="generar-clave-api.html">
+                                    <i class="fas fa-key"></i> Generar API Key
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tipos-ubicacion.html">
+                                    <i class="fas fa-map-pin"></i> Tipos de Ubicación
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="content-section">
+                <div class="content-body">
+                    <div class="icon-feature">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    
+                    <p class="lead">
+                        Existen diferentes tecnologías para determinar la ubicación geográfica, cada una con sus ventajas y casos de uso específicos.
+                    </p>
+
+                    <div class="tipo-card">
+                        <div class="tipo-header">
+                            <i class="fas fa-satellite"></i>
+                            <h3>1. GPS/GNSS (Sistema de Posicionamiento Global)</h3>
+                        </div>
+                        <div class="tipo-body">
+                            <p><strong>Descripción:</strong> Utiliza una red de satélites en órbita para triangular la posición exacta del dispositivo.</p>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-plus-circle text-success"></i> Ventajas</h5>
+                                    <ul>
+                                        <li>Alta precisión (5-10 metros)</li>
+                                        <li>Funciona en exteriores</li>
+                                        <li>Cobertura mundial</li>
+                                        <li>No requiere internet</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-minus-circle text-danger"></i> Desventajas</h5>
+                                    <ul>
+                                        <li>No funciona en interiores</li>
+                                        <li>Consume más batería</li>
+                                        <li>Requiere línea de vista al cielo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="uso-badge">
+                                <strong>Uso común:</strong> Navegación, apps de mapas, fitness trackers
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tipo-card">
+                        <div class="tipo-header">
+                            <i class="fas fa-wifi"></i>
+                            <h3>2. Geolocalización por Wi-Fi</h3>
+                        </div>
+                        <div class="tipo-body">
+                            <p><strong>Descripción:</strong> Detecta redes Wi-Fi cercanas y compara con una base de datos de ubicaciones conocidas.</p>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-plus-circle text-success"></i> Ventajas</h5>
+                                    <ul>
+                                        <li>Funciona en interiores</li>
+                                        <li>Bajo consumo de batería</li>
+                                        <li>Buena precisión urbana (20-50m)</li>
+                                        <li>Rápida detección</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-minus-circle text-danger"></i> Desventajas</h5>
+                                    <ul>
+                                        <li>Requiere Wi-Fi habilitado</li>
+                                        <li>Menos preciso que GPS</li>
+                                        <li>Depende de base de datos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="uso-badge">
+                                <strong>Uso común:</strong> Apps móviles, servicios urbanos, centros comerciales
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tipo-card">
+                        <div class="tipo-header">
+                            <i class="fas fa-broadcast-tower"></i>
+                            <h3>3. Triangulación por Torres Celulares (Cell-ID)</h3>
+                        </div>
+                        <div class="tipo-body">
+                            <p><strong>Descripción:</strong> Calcula la ubicación mediante la señal de las torres de telefonía móvil más cercanas.</p>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-plus-circle text-success"></i> Ventajas</h5>
+                                    <ul>
+                                        <li>Siempre disponible con señal</li>
+                                        <li>Muy bajo consumo</li>
+                                        <li>Funciona sin GPS ni Wi-Fi</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-minus-circle text-danger"></i> Desventajas</h5>
+                                    <ul>
+                                        <li>Baja precisión (100m-varios km)</li>
+                                        <li>Depende de cobertura celular</li>
+                                        <li>Variable según ubicación</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="uso-badge">
+                                <strong>Uso común:</strong> Servicios de emergencia, ubicación aproximada
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tipo-card">
+                        <div class="tipo-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>4. Geolocalización por IP</h3>
+                        </div>
+                        <div class="tipo-body">
+                            <p><strong>Descripción:</strong> Determina la ubicación aproximada basándose en la dirección IP del dispositivo.</p>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-plus-circle text-success"></i> Ventajas</h5>
+                                    <ul>
+                                        <li>No requiere permisos</li>
+                                        <li>Funciona en cualquier dispositivo</li>
+                                        <li>Cero consumo adicional</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-minus-circle text-danger"></i> Desventajas</h5>
+                                    <ul>
+                                        <li>Muy baja precisión (ciudad/región)</li>
+                                        <li>Puede ser imprecisa con VPN</li>
+                                        <li>Solo ubicación aproximada</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="uso-badge">
+                                <strong>Uso común:</strong> Websites, publicidad, detección de país/idioma
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table mt-4">
+                        <h3 class="text-center mb-4">Comparación de Precisión</h3>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tecnología</th>
+                                    <th>Precisión</th>
+                                    <th>Velocidad</th>
+                                    <th>Consumo Batería</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-satellite"></i> GPS/GNSS</td>
+                                    <td><span class="badge bg-success">Alta (5-10m)</span></td>
+                                    <td><span class="badge bg-warning">Media</span></td>
+                                    <td><span class="badge bg-danger">Alto</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-wifi"></i> Wi-Fi</td>
+                                    <td><span class="badge bg-success">Media-Alta (20-50m)</span></td>
+                                    <td><span class="badge bg-success">Rápida</span></td>
+                                    <td><span class="badge bg-success">Bajo</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-broadcast-tower"></i> Torres Celulares</td>
+                                    <td><span class="badge bg-warning">Baja (100m-varios km)</span></td>
+                                    <td><span class="badge bg-success">Rápida</span></td>
+                                    <td><span class="badge bg-success">Muy Bajo</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-network-wired"></i> IP</td>
+                                    <td><span class="badge bg-danger">Muy Baja (ciudad)</span></td>
+                                    <td><span class="badge bg-success">Instantánea</span></td>
+                                    <td><span class="badge bg-success">Ninguno</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (local) -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

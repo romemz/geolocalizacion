@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Ubicación - Guía Completa</title>
+    
+    <!-- Bootstrap CSS (local) -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="card-custom content-page">
+            <div class="header-section">
+                <h1><i class="fas fa-map-pin"></i> Tipos de Ubicación</h1>
+                <p>Clasificación según precisión y contexto</p>
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <i class="fas fa-map-marked-alt"></i> Geolocalización
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">
+                                    <i class="fas fa-home"></i> Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que-es-geolocalizacion.html">
+                                    <i class="fas fa-question-circle"></i> ¿Qué es?
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tipos-geolocalizacion.html">
+                                    <i class="fas fa-list"></i> Tipos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aplicaciones-geolocalizacion.html">
+                                    <i class="fas fa-mobile-alt"></i> Aplicaciones
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="que-es-api.html">
+                                    <i class="fas fa-code"></i> API
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="generar-clave-api.html">
+                                    <i class="fas fa-key"></i> Generar API Key
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="tipos-ubicacion.html">
+                                    <i class="fas fa-map-pin"></i> Tipos de Ubicación
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="content-section">
+                <div class="content-body">
+                    <div class="icon-feature">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    
+                    <p class="lead">
+                        Existen diferentes tipos de ubicación según la precisión, el método de obtención y el contexto de uso.
+                    </p>
+
+                    <h3 class="mt-4">1. Por Precisión</h3>
+
+                    <div class="ubicacion-card">
+                        <div class="ubicacion-icon precise">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                        <div class="ubicacion-content">
+                            <h4>Ubicación Precisa</h4>
+                            <p><strong>Precisión:</strong> 5-10 metros</p>
+                            <p>Utiliza GPS/GNSS para obtener coordenadas exactas. Ideal para navegación turn-by-turn y tracking preciso.</p>
+                            
+                            <div class="examples">
+                                <strong>Ejemplos de uso:</strong>
+                                <ul>
+                                    <li>Navegación GPS en automóviles</li>
+                                    <li>Apps de running (Strava, Nike Run Club)</li>
+                                    <li>Rastreo de vehículos y flotas</li>
+                                    <li>Geofencing preciso</li>
+                                    <li>Mapeo topográfico</li>
+                                </ul>
+                            </div>
+
+                            <div class="row g-2 mt-3">
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-check-circle text-success"></i>
+                                        <span>Alta precisión</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-battery-half text-warning"></i>
+                                        <span>Alto consumo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ubicacion-card">
+                        <div class="ubicacion-icon approximate">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="ubicacion-content">
+                            <h4>Ubicación Aproximada</h4>
+                            <p><strong>Precisión:</strong> 50 metros - varios kilómetros</p>
+                            <p>Usa Wi-Fi, torres celulares o IP. Suficiente para servicios basados en área o región.</p>
+                            
+                            <div class="examples">
+                                <strong>Ejemplos de uso:</strong>
+                                <ul>
+                                    <li>Búsqueda de restaurantes cercanos</li>
+                                    <li>Pronóstico del tiempo local</li>
+                                    <li>Anuncios geolocalizados</li>
+                                    <li>Detección de ciudad/región</li>
+                                    <li>Servicios de delivery por zona</li>
+                                </ul>
+                            </div>
+
+                            <div class="row g-2 mt-3">
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-battery-full text-success"></i>
+                                        <span>Bajo consumo</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <i class="fas fa-tachometer-alt text-info"></i>
+                                        <span>Rápida detección</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">2. Por Entorno</h3>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="entorno-card">
+                                <div class="entorno-icon outdoor">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <h4>Ubicación Exterior (Outdoor)</h4>
+                                <p>Utiliza principalmente GPS y señales satelitales.</p>
+                                
+                                <div class="tech-list">
+                                    <span class="tech-badge"><i class="fas fa-satellite"></i> GPS</span>
+                                    <span class="tech-badge"><i class="fas fa-broadcast-tower"></i> Celular</span>
+                                    <span class="tech-badge"><i class="fas fa-wifi"></i> Wi-Fi</span>
+                                </div>
+
+                                <p class="mt-3"><strong>Ventaja:</strong> Alta precisión con línea de vista al cielo</p>
+                                <p><strong>Limitación:</strong> No funciona en interiores</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="entorno-card">
+                                <div class="entorno-icon indoor">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <h4>Ubicación Interior (Indoor)</h4>
+                                <p>Usa tecnologías alternativas al GPS.</p>
+                                
+                                <div class="tech-list">
+                                    <span class="tech-badge"><i class="fas fa-wifi"></i> Wi-Fi</span>
+                                    <span class="tech-badge"><i class="fab fa-bluetooth"></i> Bluetooth</span>
+                                    <span class="tech-badge"><i class="fas fa-signal"></i> Beacons</span>
+                                </div>
+
+                                <p class="mt-3"><strong>Ventaja:</strong> Funciona sin señal GPS</p>
+                                <p><strong>Uso común:</strong> Centros comerciales, aeropuertos, museos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">3. Por Temporalidad</h3>
+
+                    <div class="tiempo-comparison">
+                        <div class="tiempo-card">
+                            <div class="tiempo-icon realtime">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Ubicación en Tiempo Real</h4>
+                            <p>Actualización constante de la posición actual del dispositivo.</p>
+                            
+                            <div class="caracteristicas">
+                                <h5>Características:</h5>
+                                <ul>
+                                    <li><i class="fas fa-sync-alt"></i> Actualización continua (1-5 segundos)</li>
+                                    <li><i class="fas fa-bolt"></i> Respuesta inmediata</li>
+                                    <li><i class="fas fa-battery-quarter"></i> Mayor consumo de batería</li>
+                                    <li><i class="fas fa-signal"></i> Requiere conexión activa</li>
+                                </ul>
+                            </div>
+
+                            <div class="use-cases">
+                                <h5>Casos de uso:</h5>
+                                <div class="case-item">
+                                    <i class="fas fa-car"></i> <span>Tracking de Uber/taxis</span>
+                                </div>
+                                <div class="case-item">
+                                    <i class="fas fa-shipping-fast"></i> <span>Seguimiento de entregas</span>
+                                </div>
+                                <div class="case-item">
+                                    <i class="fas fa-running"></i> <span>Apps de fitness en vivo</span>
+                                </div>
+                                <div class="case-item">
+                                    <i class="fas fa-users"></i> <span>Compartir ubicación en vivo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tiempo-card">
+                            <div class="tiempo-icon historic">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <h4>Ubicación Histórica</h4>
+                            <p>Registro de posiciones pasadas almacenadas en el tiempo.</p>
+                            
+                            <div class="caracteristicas">
+                                <h5>Características:</h5>
+                                <ul>
+                                    <li><i class="fas fa-database"></i> Almacenamiento de datos</li>
+                                    <li><i class="fas fa-chart-line"></i> Análisis de patrones</li>
+                                    <li><i class="fas fa-battery-full"></i> Sin consumo adicional</li>
+                                    <li><i class="fas fa-calendar-alt"></i> Revisión posterior</li>
+                                </ul>
+                            </div>
+
+                            <div class="use-cases">
+                                <h5>Casos de uso:</h5>
+                                <div class="case-item">
+                                    <i class="fas fa-route"></i> <span>Historial de rutas</span>
+                                </div>
+                                <div class="case-item">
+                                    <i class="fas fa-chart-pie"></i> <span>Análisis de movilidad</span>
+                                </div>
+                                <div class="case-item">
+                                    <i class="fas fa-map-marked"></i> <span>Google Timeline</span>
+                                </div>
+                                <div class="case-item">
+                                    <i class="fas fa-search-location"></i> <span>Investigación forense</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">4. Por Método de Determinación</h3>
+
+                    <div class="metodo-grid">
+                        <div class="metodo-item">
+                            <i class="fas fa-satellite-dish"></i>
+                            <h5>Absoluta</h5>
+                            <p>Coordenadas geográficas exactas (latitud, longitud)</p>
+                        </div>
+                        <div class="metodo-item">
+                            <i class="fas fa-arrows-alt"></i>
+                            <h5>Relativa</h5>
+                            <p>Posición respecto a un punto de referencia</p>
+                        </div>
+                        <div class="metodo-item">
+                            <i class="fas fa-layer-group"></i>
+                            <h5>Simbólica</h5>
+                            <p>Nombre de lugar (ej: "Starbucks, Av. Principal")</p>
+                        </div>
+                        <div class="metodo-item">
+                            <i class="fas fa-draw-polygon"></i>
+                            <h5>Por Área</h5>
+                            <p>Zona geográfica o polígono (geofencing)</p>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">Tabla Comparativa</h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover comparison-table-full">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Precisión</th>
+                                    <th>Tecnología</th>
+                                    <th>Consumo Batería</th>
+                                    <th>Uso Principal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Precisa</strong></td>
+                                    <td><span class="badge bg-success">5-10m</span></td>
+                                    <td>GPS/GNSS</td>
+                                    <td><span class="badge bg-danger">Alto</span></td>
+                                    <td>Navegación</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Aproximada</strong></td>
+                                    <td><span class="badge bg-warning">50m-5km</span></td>
+                                    <td>Wi-Fi/Celular</td>
+                                    <td><span class="badge bg-success">Bajo</span></td>
+                                    <td>Servicios locales</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Interior</strong></td>
+                                    <td><span class="badge bg-info">10-50m</span></td>
+                                    <td>Bluetooth/Beacons</td>
+                                    <td><span class="badge bg-success">Bajo</span></td>
+                                    <td>Indoor navigation</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tiempo Real</strong></td>
+                                    <td><span class="badge bg-success">Variable</span></td>
+                                    <td>Mixta</td>
+                                    <td><span class="badge bg-warning">Medio-Alto</span></td>
+                                    <td>Tracking live</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Histórica</strong></td>
+                                    <td><span class="badge bg-success">Variable</span></td>
+                                    <td>Almacenada</td>
+                                    <td><span class="badge bg-success">Ninguno</span></td>
+                                    <td>Análisis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="alert alert-info mt-4">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Consejo:</strong> La elección del tipo de ubicación depende del caso de uso. Para navegación precisa usa GPS, para servicios generales usa ubicación aproximada para ahorrar batería.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (local) -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
